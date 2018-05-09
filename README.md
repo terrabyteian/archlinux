@@ -22,7 +22,7 @@
     ```
 5. *(Optional)* If behind a proxy, export http_proxy and https_proxy for pacman downloads
 
-    If you're proxy cannot resolve certain domains or is too slow with certain mirrors, sort your mirror list as so:
+    If your proxy cannot resolve certain domains or is too slow with certain mirrors, sort your mirror list as so:
     
     ```
     pacman -S reflector
