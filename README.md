@@ -1,6 +1,6 @@
 # ArchLinux
 
-## Install ArchLinux on VirtualBox
+## Install ArchLinux on Virtualization Platform
 
 1. Create ArchLinux VM, Enable EFI under Settings -> System, boot to installation media
 2. Using cfdisk, create:
@@ -39,4 +39,9 @@
     mkdir /boot/EFI/boot
     cp /boot/EFI/arch_grub/grubx64.efi /boot/EFI/boot/bootx64.efi
     ```
-8. Remove installation media and reboot VM
+8. Start dhcpcd
+    ````
+    pacman -S dhcpcd
+    systemctl enable dhcpcd
+    ````
+9. Remove installation media and reboot VM
